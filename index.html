@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Rifaldi Adrian</title>
+    <!-- Css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Viga&display=swap" rel="stylesheet"> 
+    <!-- JS -->
+    <script src="script.js"></script>
+<script src="https://use.fontawesome.com/1496405f84.js"></script>
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="main">
+            <div class="header">
+                <div class="time">
+                    <label for="">16.39</label>
+                </div>
+                <div class="pony"></div>
+                <div class="info">
+                    <ul>
+                        <li>
+                            <span class="fa fa-wifi"></span>
+                        </li>
+                        <li>
+                            <span class="fa fa-battery"></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <h2>Calculator</h2>
+            <form name="form">
+                <input class="textarea" name="textarea" disabled>
+            </form>
+            <table>
+                <tr>
+                    <td>
+                        <input type="button" class="button act" value="AC" onclick="clean()">
+                    </td>
+                    <td>
+                        <input type="button" class="button act" value="<" onclick="back()">
+                    </td>
+                    <td>
+                        <input type="button" class="button act" value="%" onclick="insert(' % ')">
+                    </td>
+                    <td>
+                        <input type="button" class="button opr" value="/" onclick="insert(' / ')">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" class="button num" value="7" onclick="insert(7)">
+                    </td>
+                    <td>
+                        <input type="button" class="button num" value="8" onclick="insert(8)">
+                    </td>
+                    <td>
+                        <input type="button" class="button num" value="9" onclick="insert(9)">
+                    </td>
+                    <td>
+                        <input type="button" class="button opr" value="x" onclick="insert(' * ')">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" class="button num" value="4" onclick="insert(4)">
+                    </td>
+                    <td>
+                        <input type="button" class="button num" value="5" onclick="insert(5)">
+                    </td>
+                    <td>
+                        <input type="button" class="button num" value="6" onclick="insert(6)">
+                    </td>
+                    <td>
+                        <input type="button" class="button opr" value="-" onclick="insert(' - ')">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" class="button num" value="1" onclick="insert(1)">
+                    </td>
+                    <td>
+                        <input type="button" class="button num" value="2" onclick="insert(2)">
+                    </td>
+                    <td>
+                        <input type="button" class="button num" value="3" onclick="insert(3)">
+                    </td>
+                    <td>
+                        <input type="button" class="button opr" value="+" onclick="insert(' + ')">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="button" class="button num first" value="0" onclick="insert(0)">
+                    </td>
+                    <td>
+                        <input type="button" class="button num" value="." onclick="insert('.')">
+                    </td>
+                    <td>
+                        <input type="button" class="button opr" value="=" onclick="equal()">
+                    </td>
+                </tr>
+            </table>
+            <div class="line"></div>
+        </div>
+    </div>
+</body>
+</html>
